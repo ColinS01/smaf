@@ -24,3 +24,7 @@ stretch_mode = 4
 [node name="SGCollisionShape2D" type="SGCollisionShape2D" parent="SGPhysicsBody2D" unique_id=2064697685]
 shape = SubResource("SGRectangleShape2D_68vro")
 position = Vector2(1246, 894)
+
+[node name="P1Spawn" type="Marker2D" parent="." unique_id=1974766803]
+
+[node name="P2Spawn" type="Marker2D" parent="." unique_id=2121015298]

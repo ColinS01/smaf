@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dxagn517a016m"]
+
+[ext_resource type="Script" uid="uid://d1ntn3glihieq" path="res://Core/Player/BaseFighter.cs" id="1_qre2e"]
+
+[node name="Fighter" type="CharacterBody2D" unique_id=1659051901]
+script = ExtResource("1_qre2e")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=209773227]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1100512236]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=450830746]
+
+[node name="Timer" type="Timer" parent="." unique_id=142697064]
