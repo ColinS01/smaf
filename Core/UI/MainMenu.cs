@@ -11,6 +11,8 @@ public partial class MainMenu : Control
 
         GetNode<Button>("CenterContainer/VBoxContainer/Quit")
             .Pressed += OnQuitPressed;
+
+        GetNode<Button>("CenterContainer/VBoxContainer/Start").GrabFocus();
     }
 
     private void OnStartPressed()
