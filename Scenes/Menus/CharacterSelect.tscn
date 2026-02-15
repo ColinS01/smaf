@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://cp3sqicgeg08v"]
+
+[ext_resource type="Script" uid="uid://c36v06mwo4dxo" path="res://Core/UI/CharacterSelect.cs" id="1_uke6b"]
+[ext_resource type="Texture2D" uid="uid://nt362glbsu7b" path="res://assets/Menus/Fighter_Select_Menu.jpg" id="2_4epl8"]
+[ext_resource type="PackedScene" uid="uid://ikkhyl2m3bgc" path="res://Scenes/UI/FighterButton.tscn" id="2_hq452"]
+[ext_resource type="Resource" uid="uid://c04mw5hpc5say" path="res://Data/Fighters/Duotails_data.tres" id="3_cs34q"]
+[ext_resource type="FontFile" uid="uid://rqg4stshrti" path="res://fonts/Oswald-VariableFont_wght.ttf" id="3_netlm"]
+[ext_resource type="Resource" uid="uid://13oscjcn2ati" path="res://Data/Fighters/Macho_data.tres" id="4_cs34q"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ob7kp"]
+font = ExtResource("3_netlm")
+font_size = 52
+
+[sub_resource type="LabelSettings" id="LabelSettings_netlm"]
+font = ExtResource("3_netlm")
+font_size = 40
+
+[node name="CharacterSelect" type="Control" unique_id=837375948 node_paths=PackedStringArray("Player1Icon", "Player2Icon", "StatusLabel", "MenuButton", "PlayButton", "FighterGrid")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2564.0
+offset_bottom = 1441.0
+script = ExtResource("1_uke6b")
+Player1Icon = NodePath("Player1Panel/SelectedIcon")
+Player2Icon = NodePath("Player2Panel/SelectedIcon")
+StatusLabel = NodePath("Status")
+MenuButton = NodePath("MenuButton")
+PlayButton = NodePath("PlayButton")
+FighterGrid = NodePath("FighterGrid/GridContainer")
+FighterButtonScene = ExtResource("2_hq452")
+Fighters = Array[Object]([ExtResource("3_cs34q"), ExtResource("4_cs34q")])
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=3859343]
+layout_mode = 0
+offset_right = 2564.0
+offset_bottom = 1441.0
+texture = ExtResource("2_4epl8")
+
+[node name="Player1Panel" type="Control" parent="." unique_id=1781180473]
+layout_mode = 1
+anchor_top = 0.014
+anchor_right = 0.008
+anchor_bottom = 0.014
+offset_left = 40.0
+offset_top = 979.826
+offset_right = 1164.488
+offset_bottom = 1356.826
+
+[node name="Label" type="Label" parent="Player1Panel" unique_id=519609477]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 120.0
+offset_right = 306.0
+offset_bottom = 217.0
+text = "Player 1"
+label_settings = SubResource("LabelSettings_ob7kp")
+
+[node name="SelectedIcon" type="TextureRect" parent="Player1Panel" unique_id=1224677119]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 40.0
+offset_right = 875.0
+offset_bottom = 345.0
+
+[node name="Player2Panel" type="Control" parent="." unique_id=1958093233]
+anchors_preset = 0
+offset_left = 1320.0
+offset_top = 1000.0
+offset_right = 2511.0
+offset_bottom = 1377.0
+
+[node name="Label" type="Label" parent="Player2Panel" unique_id=968084368]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 120.0
+offset_right = 285.0
+offset_bottom = 217.0
+text = "Player 2"
+label_settings = SubResource("LabelSettings_ob7kp")
+
+[node name="SelectedIcon" type="TextureRect" parent="Player2Panel" unique_id=1199751876]
+layout_mode = 0
+offset_left = 569.0
+offset_top = 40.0
+offset_right = 884.0
+offset_bottom = 345.0
+
+[node name="FighterGrid" type="Control" parent="." unique_id=1119704835]
+anchors_preset = 0
+offset_right = 2564.0
+offset_bottom = 927.0
+
+[node name="GridContainer" type="GridContainer" parent="FighterGrid" unique_id=1957677444]
+layout_mode = 0
+offset_top = 133.0
+offset_right = 2564.0
+offset_bottom = 927.0
+columns = 10
+
+[node name="Status" type="Label" parent="." unique_id=952758063]
+layout_mode = 0
+offset_left = 984.0
+offset_right = 1605.0
+offset_bottom = 133.0
+text = "Status"
+label_settings = SubResource("LabelSettings_netlm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuButton" type="Button" parent="." unique_id=554604219]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 133.0
+offset_bottom = 116.0
+text = "Menu"
+expand_icon = true
+
+[node name="PlayButton" type="Button" parent="." unique_id=370112957]
+layout_mode = 0
+offset_left = 2423.0
+offset_top = 19.0
+offset_right = 2535.0
+offset_bottom = 116.0
+text = "Play"
+expand_icon = true

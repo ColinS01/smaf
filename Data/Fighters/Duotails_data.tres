@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://c04mw5hpc5say"]
+
+[ext_resource type="Script" uid="uid://dsuahucpbtf5s" path="res://Core/Player/FighterData.cs" id="1_mloy8"]
+[ext_resource type="Texture2D" uid="uid://jasqqdq47vob" path="res://assets/Fighters/Icons/Duotails_Icon.jpg" id="1_qhigq"]
+
+[resource]
+script = ExtResource("1_mloy8")
+Id = "duotails"
+DisplayName = "DuoTails"
+Portrait = ExtResource("1_qhigq")
+metadata/_custom_type_script = "uid://dsuahucpbtf5s"

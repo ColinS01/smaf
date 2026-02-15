@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dw5s0vbg0vofg"]
+
+[ext_resource type="Texture2D" uid="uid://w2ubxkv43382" path="res://assets/Stages/Stage.jpg" id="1_e0003"]
+
+[sub_resource type="SGRectangleShape2D" id="SGRectangleShape2D_68vro"]
+extents_x = 28413720
+extents_y = 443664
+
+[node name="Match" type="Control" unique_id=1257939203]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2560.0
+offset_bottom = 1440.0
+
+[node name="Background" type="TextureRect" parent="." unique_id=1475151188]
+layout_mode = 0
+offset_right = 2560.0
+offset_bottom = 1440.0
+texture = ExtResource("1_e0003")
+stretch_mode = 4
+
+[node name="SGPhysicsBody2D" type="SGPhysicsBody2D" parent="." unique_id=1885488126]
+
+[node name="SGCollisionShape2D" type="SGCollisionShape2D" parent="SGPhysicsBody2D" unique_id=2064697685]
+shape = SubResource("SGRectangleShape2D_68vro")
+position = Vector2(1246, 894)

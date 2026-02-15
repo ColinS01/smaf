@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://cqu7nwqa1ulny"]
+
+[ext_resource type="FontFile" uid="uid://rqg4stshrti" path="res://fonts/Oswald-VariableFont_wght.ttf" id="1_xcc4s"]
+
+[resource]
+default_font = ExtResource("1_xcc4s")

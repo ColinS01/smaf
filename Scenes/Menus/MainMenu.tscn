@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c1ndvv5puf4ay"]
+
+[ext_resource type="Script" uid="uid://hjqi425ygjxe" path="res://Core/UI/MainMenu.cs" id="1_b42ut"]
+[ext_resource type="Theme" uid="uid://cqu7nwqa1ulny" path="res://Theme/MainMenu.tres" id="1_uv623"]
+[ext_resource type="Texture2D" uid="uid://d07bhvdmrnppr" path="res://assets/Icons/Fight_Icon.png" id="2_hqtmt"]
+[ext_resource type="Texture2D" uid="uid://b1ln8ak5gp5nh" path="res://assets/Menus/Menu.jpg" id="3_mc63j"]
+[ext_resource type="FontFile" uid="uid://rqg4stshrti" path="res://fonts/Oswald-VariableFont_wght.ttf" id="4_q15nq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbd8g"]
+bg_color = Color(0.30884117, 0.6871511, 0.48928654, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="FontVariation" id="FontVariation_7as8u"]
+base_font = ExtResource("4_q15nq")
+
+[sub_resource type="FontVariation" id="FontVariation_ts2fx"]
+base_font = SubResource("FontVariation_7as8u")
+
+[sub_resource type="Theme" id="Theme_8w8b8"]
+default_font = SubResource("FontVariation_ts2fx")
+Button/styles/normal = SubResource("StyleBoxFlat_pbd8g")
+
+[node name="MainMenu" type="Control" unique_id=1932484590]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2560.0
+offset_bottom = 1440.0
+theme = ExtResource("1_uv623")
+script = ExtResource("1_b42ut")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1016878117]
+layout_mode = 0
+offset_right = 2560.0
+offset_bottom = 1440.0
+texture = ExtResource("3_mc63j")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=530179907]
+layout_mode = 0
+offset_right = 2560.0
+offset_bottom = 1440.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1716447562]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="CenterContainer/VBoxContainer" unique_id=127044218]
+custom_minimum_size = Vector2(300, 90)
+layout_mode = 2
+theme = SubResource("Theme_8w8b8")
+icon = ExtResource("2_hqtmt")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=828129230]
+custom_minimum_size = Vector2(300, 90)
+layout_mode = 2
+theme = SubResource("Theme_8w8b8")
+text = "Quit"

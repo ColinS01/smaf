@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FighterData" format=3 uid="uid://13oscjcn2ati"]
+
+[ext_resource type="Texture2D" uid="uid://chr05p6qjc4c1" path="res://assets/Fighters/Icons/Macho_Icon.jpg" id="1_pyge4"]
+[ext_resource type="Script" uid="uid://dsuahucpbtf5s" path="res://Core/Player/FighterData.cs" id="1_ur8pi"]
+
+[resource]
+script = ExtResource("1_ur8pi")
+Id = "macho"
+DisplayName = "Macho"
+Portrait = ExtResource("1_pyge4")
+metadata/_custom_type_script = "uid://dsuahucpbtf5s"

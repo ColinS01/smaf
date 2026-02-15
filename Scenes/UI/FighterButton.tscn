@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ikkhyl2m3bgc"]
+
+[ext_resource type="Script" uid="uid://bxubjovv6vfi3" path="res://Core/UI/FighterButton.cs" id="1_ul5rh"]
+
+[node name="FighterButton" type="Button" unique_id=930861968]
+custom_minimum_size = Vector2(160, 160)
+offset_right = 8.0
+offset_bottom = 8.0
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("1_ul5rh")
