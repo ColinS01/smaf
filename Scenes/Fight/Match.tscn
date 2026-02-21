@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dw5s0vbg0vofg"]
 
 [ext_resource type="Texture2D" uid="uid://w2ubxkv43382" path="res://assets/Stages/Stage.jpg" id="1_e0003"]
+[ext_resource type="Script" uid="uid://dsumcrapcx5yl" path="res://Core/UI/FightScene.cs" id="1_yay2c"]
+[ext_resource type="PackedScene" uid="uid://dxagn517a016m" path="res://Scenes/Fighter/Fighter.tscn" id="2_t53gd"]
 
 [sub_resource type="SGRectangleShape2D" id="SGRectangleShape2D_68vro"]
 extents_x = 28413720
@@ -11,6 +13,8 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 2560.0
 offset_bottom = 1440.0
+script = ExtResource("1_yay2c")
+FighterScene = ExtResource("2_t53gd")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1475151188]
 layout_mode = 0
@@ -26,5 +30,7 @@ shape = SubResource("SGRectangleShape2D_68vro")
 position = Vector2(1246, 894)
 
 [node name="P1Spawn" type="Marker2D" parent="." unique_id=1974766803]
+position = Vector2(987, 826)
 
 [node name="P2Spawn" type="Marker2D" parent="." unique_id=2121015298]
+position = Vector2(1548, 820)

@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://dsuahucpbtf5s" path="res://Core/Player/FighterData.cs" id="1_mloy8"]
 [ext_resource type="Texture2D" uid="uid://jasqqdq47vob" path="res://assets/Fighters/Icons/Duotails_Icon.jpg" id="1_qhigq"]
+[ext_resource type="SpriteFrames" uid="uid://up7lqtycex4x" path="res://assets/Fighters/DuoTails/Duotails_SpriteFrames.tres" id="2_7ea18"]
 
 [resource]
 script = ExtResource("1_mloy8")
 Id = "duotails"
 DisplayName = "DuoTails"
 Portrait = ExtResource("1_qhigq")
+SpriteFrames = ExtResource("2_7ea18")
 metadata/_custom_type_script = "uid://dsuahucpbtf5s"

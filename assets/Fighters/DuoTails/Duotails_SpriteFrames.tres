@@ -1,0 +1,64 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://up7lqtycex4x"]
+
+[ext_resource type="Texture2D" uid="uid://chns7ifye7bh0" path="res://assets/Fighters/DuoTails/Duotails.png" id="1_fwgwj"]
+[ext_resource type="Texture2D" uid="uid://b1kp8uoktavwg" path="res://assets/Fighters/DuoTails/Duotails_Jumping-1.png" id="2_injkk"]
+[ext_resource type="Texture2D" uid="uid://crqakfuirrl7k" path="res://assets/Fighters/DuoTails/Duotails_Jumping-2.png" id="3_j0x0i"]
+[ext_resource type="Texture2D" uid="uid://cq7kl61eanfid" path="res://assets/Fighters/DuoTails/Duotails_Jumping-3.png" id="4_whcov"]
+[ext_resource type="Texture2D" uid="uid://b771phqt7we7t" path="res://assets/Fighters/DuoTails/Duotails_Jumping-4.png" id="5_hm3d8"]
+[ext_resource type="Texture2D" uid="uid://dt03ws2ru01tn" path="res://assets/Fighters/DuoTails/Duotails_Jumping-5.png" id="6_p47j6"]
+[ext_resource type="Texture2D" uid="uid://bsyqi6flpsl0y" path="res://assets/Fighters/DuoTails/Duotails_Moving-1.png" id="7_sfh64"]
+[ext_resource type="Texture2D" uid="uid://b7caqlg3ms5c2" path="res://assets/Fighters/DuoTails/Duotails_Moving-2.png" id="8_ydeoa"]
+[ext_resource type="Texture2D" uid="uid://c77iqyie8bc35" path="res://assets/Fighters/DuoTails/Duotails_Moving-3.png" id="9_086cf"]
+[ext_resource type="Texture2D" uid="uid://ldvith2d41ny" path="res://assets/Fighters/DuoTails/Duotails_Moving-4.png" id="10_r30ad"]
+[ext_resource type="Texture2D" uid="uid://ynlcve8fyji6" path="res://assets/Fighters/DuoTails/Duotails_Moving-5.png" id="11_e10nr"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fwgwj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_injkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j0x0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_whcov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hm3d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p47j6")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_sfh64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ydeoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_086cf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_r30ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_e10nr")
+}],
+"loop": false,
+"name": &"walk",
+"speed": 5.0
+}]
